@@ -3,6 +3,12 @@ package com.ourisaban.csv.parser
 import java.time.LocalTime
 import java.time.format.DateTimeParseException
 
+/**
+ * @author Ouri Saban
+ *
+ * This object is a format helper in order to detect the real type of the String sent.
+ */
+
 object ColumnTypeIdentifier {
     enum class EColumnType {
         Date,

@@ -2,6 +2,13 @@ package com.ourisaban.csv.parser
 
 import java.time.LocalTime
 
+/**
+ * @author Ouri Saban
+ *
+ * This class is a data class about Column CSV.
+ * Contain the CSV data and the possibility to return for the specified column its min or max
+ */
+
 class Column(val header: Any, val data: ArrayList<String>) {
     fun type() = ColumnTypeIdentifier.identifyColumnType(this.data[0])
 

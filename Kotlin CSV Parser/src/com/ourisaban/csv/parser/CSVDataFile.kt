@@ -4,6 +4,16 @@ import java.io.BufferedReader
 import java.util.*
 import kotlin.collections.ArrayList
 
+/**
+ * @author Ouri Saban
+ *
+ * This class is parsing the CSV File object and return the requested columns or global information about the format.
+ *
+ * @constructor
+ * the primary constructor of this class is composed by the BufferedReader sent by CSVFile, boolean isHeader in order to behave as wanted and delimiter type.
+ * Build the central object of this library which is a LinkedList of Columns
+ */
+
 class CSVDataFile(fileReader: BufferedReader, val isHeader: Boolean, delimiter: Char) {
     private val fileReader = fileReader
     private val delimiter = delimiter

@@ -11,4 +11,4 @@ Welcome to CSVParser Kotlin library
     println(column)
     println("type: " + column.type())
     println("min: " + column.min())
-    println("max: " + column.max())```
+    println("max: " + column.max())
